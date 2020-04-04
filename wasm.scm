@@ -1,8 +1,5 @@
 (import srfi-1 srfi-4 (chicken string))
 
-(define-syntax λ
-  (syntax-rules () ((λ . α) (lambda α))))
-
 (define (read-wasm α)
   (let* ((ω (open-input-file α))
          (Ω (read-u8vector #f ω)))
