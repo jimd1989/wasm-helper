@@ -33,5 +33,6 @@
 (define (signatures α) (goto 1 α))
 (define (types α)      (goto 3 α))
 (define (memory α)     (goto 5 α))
+(define (globals α))   (goto 6 α))
 (define (exports α)    (goto 7 α))
 (define (code α)       (goto 10 α))
